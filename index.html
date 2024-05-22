@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mariachi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      #navbarSupportedContent {
+        justify-content: center;
+      }
+      .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 15px;
+        line-height: 23px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #ffd7ad;
+      }
+      .bg-body-tertiary {
+        background-color: #4a1831 !important;
+      }
+      .overlay {
+        position: relative;
+      }
+      .overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.5;
+      }
+      button.navbar-toggler {
+    background: bisque;
+}
+    </style>
+  </head>
+  <body>
+    <!--header start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--header end-->
+    <!--hero start-->
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(./assest/images/hero.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+      "
+    >
+      <div class="row col-md-12">
+        <img
+          src="./assest/images/logo.png"
+          class="img-fluid"
+          alt="logo"
+          style="
+            height: 200px;
+            width: 200px;
+            padding-top: 36px;
+            padding-bottom: 20px;
+          "
+        />
+        <h1
+          class="text-capitalize font-weight-normal fs-1"
+          style="color: #ffd7ad; font-size: 80px"
+        >
+          Mariachi
+        </h1>
+        <p class="my-3" style="color: #ffd7ad; width: 315px; font-size: 18px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div style="padding-bottom: 20px">
+          <button
+            type="button"
+            class="btn btn-secondary text-uppercase my-3"
+            style="background-color: #ffd7ad; color: #4a1831"
+          >
+            order now
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--hero end-->
+    <!--menu start-->
+    <div class="container-fluid">
+      <div class="row text-center" style="background-color: #ffd7ad">
+        <div class="col-12">
+          <h2 class="mt-5">Don’t Miss our Menu!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            <br />
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary text-uppercase py-2 px-5 mb-5 rounded-pill"
+            style="background-color: #4a1831"
+          >
+            see menu
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--menu end-->
+    <!--new start-->
+    <div>
+      <img src="./assest/images/new.png" class="img-fluid" />
+    </div>
+    <!--new end-->
+    <!--about start-->
+    <div class="container-fluid" style="background-color: #ffd7ad">
+      <div class="row pt-5 d-flex justify-content-center">
+        <div class="col-md-5">
+          <img
+            src="./assest/images/aout.png"
+            alt="about"
+            class="img-fluid"
+            height="300px;"
+            width="auto;"
+          />
+        </div>
+        <div
+          class="col-md-5 d-flex justify-content-center d-flex align-items-center flex-column"
+          style="align-items: flex-start !important"
+        >
+          <h2 class="pb-1 pt-5 fs-1" style="color: 4a1831; font-size: 50px">
+            About Mariachi
+          </h2>
+          <p class="pt-1" style="color: #4a1831; font-size: 20px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary text-uppercase px-4 py-2 rounded-pill mt-3"
+            style="background-color: #4a1831; color: #ffd7ad"
+          >
+            tell me more
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        background-image: url(./assest/images/discount.png);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #ffd7ad;
+        background-size: contain;
+      "
+    >
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md-12 pt-5" style="padding-top: 58px !important">
+            <span
+              style="
+                font-size: 80px;
+                line-height: 70px;
+                font-weight: 800;
+                color: #e63956;
+              "
+              >25%</span
+            >
+            <div>
+              <span
+                class="text-uppercase"
+                style="
+                  font-size: 50px;
+                  line-height: 70px;
+                  font-weight: 800;
+                  color: #55112e;
+                  font-family: Myriad Pro;
+                "
+                >discount</span
+              >
+            </div>
+            <div>
+              <span
+                class="text-uppercase"
+                style="
+                  font-size: 80px;
+                  line-height: 70px;
+                  font-weight: 800;
+                  color: #6cc5ac;
+                  font-family: Myriad Pro;
+                "
+                >on tacos!</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--about end-->
+    <!--offer start-->
+    <div class="container-fluid" style="background-color: #4a1831">
+      <div class="row d-flex justify-content-center align-items-center pb-5">
+        <div class="col-md-5">
+          <h2
+            class="text-capitalize mb-4 pt-5 fs-1"
+            style="color: #ffd7ad; font-size: 50px"
+          >
+            see our offers
+          </h2>
+          <p class="mb-4" style="color: #ffd7ad; font-size: 20px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <button
+            class="py-1 px-5 rounded-pill"
+            type="button"
+            class="btn btn-primary"
+            style="background-color: #ffd7ad"
+          >
+            Primary
+          </button>
+        </div>
+        <div class="col-md-5 mt-5">
+          <img src="./assest/images/offer.png" alt="offer" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!--offers end-->
+    <!--pedro start-->
+    <div
+      class="container-fluid overlay"
+      style="
+        background-image: url(./assest/images/pedro.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div
+        class="row text-center pt-5 pb-5 pedro"
+        style="position: relative; z-index: 1"
+      >
+        <div class="col-md-12 pt-5 pb-5">
+          <img src="./assest/images/logo.png" alt="logo" class="img-fluid" />
+          <p class="mt-3 fs-4" style="color: #ffd7ad; font-size: 30px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <h5 style="font-size: 44px; color: #ffd7ad" class="fs-1">pedro rodriguez</h5>
+        </div>
+      </div>
+    </div>
+    <!--pedro section end-->
+    <!--get start-->
+    <div class="container-fluid" style="background-color: #ffd7ad">
+      <div class="row text-center pt-5 pb-5">
+        <div class="col-md-12 mt-5 mb-5">
+          <h2
+            class="mb-4"
+            style="
+              color: #4a1831;
+              font-size: 40px;
+              line-height: 48px;
+              font-weight: 700;
+            "
+          >
+            Get our Latest Offers!
+          </h2>
+          <p
+            class="mb-4"
+            style="font-size: 20px; color: #4a1831; font-weight: 500"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+            style="margin-bottom: 10px;"
+              placeholder="Your Email"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary ps-5 rounded-pill text-uppercase"
+              type="button"
+              id="button-addon2"
+              style="
+                margin-right: 265px;
+                background-color: #4a1831;
+                color: white;
+                text-align: center;
+                padding-right: 38px;
+              "
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--get end-->
+    <!--footer start-->
+    <footer class="footer" style="background-color: #4a1831">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-3 mt-5">
+            <h2 style="color: #ffd7ad">Mariachi</h2>
+            <p style="color: #ffd7ad">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+              dignissim enim.
+            </p>
+            <ul class="list-inline footer-links">
+              <li class="list-inline-item">
+                <a href="#" style="color: #ffd7ad">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" style="color: #ffd7ad">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" style="color: #ffd7ad">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" style="color: #ffd7ad">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-5">
+            <h5 style="color: #ffd7ad">About Us</h5>
+            <ul style="list-style: none" class="p-0">
+              <li>
+                <a href="#" style="color: #ffd7ad; text-decoration: none"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none; color: #ffd7ad"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none; color: #ffd7ad"
+                  >Brand Guidelines</a
+                >
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none; color: #ffd7ad"
+                  >Tearms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none; color: #ffd7ad"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-5">
+            <h5 style="color: #ffd7ad">Services</h5>
+            <ul class="list-unstyled">
+              <li style="color: #ffd7ad">how to order</li>
+              <li style="color: #ffd7ad">our product</li>
+              <li style="color: #ffd7ad">offers</li>
+              <li style="color: #ffd7ad">promo</li>
+              <li style="color: #ffd7ad">payment method</li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-5">
+            <h5 style="color: #ffd7ad">other</h5>
+            <ul style="list-style: none" class="p-0">
+              <li>
+                <a href="#" style="color: #ffd7ad; text-decoration: none;"> contact us </a>
+              </li>
+              <li style="">
+                <a href="#" style="color:#ffd7ad; text-decoration: none; list-style: none;"> Help </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
